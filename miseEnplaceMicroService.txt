@@ -1,0 +1,29 @@
+1)Server Config:
+	name:config-server   
+	dependances:
+		1- config server
+2)Eureka Server:
+	name:eureka-server
+	dependances:
+		1- eureka server
+		2- config client
+3)Gateway:
+	name:gateway
+	dependances:
+		1-gateway
+		2-Sprint boot actuator
+		3-eureka discovery client
+		
+4)Client:
+	name:microservice1
+	dependances:
+		1-eureka discovery client
+		2-spring web
+		3-Spring data JPA
+		4-lombok
+		5-OpenFeign
+		6-PostgreSql
+		7-Spring Heteoas
+		8-Rest 
+		9-Devtools
+

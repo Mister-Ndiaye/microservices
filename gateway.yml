@@ -1,0 +1,22 @@
+#Gateway
+
+###Dependence Spring
+    1-gateway
+		2-Sprint boot actuator
+		3-eureka discovery client
+
+###Application
+@Bean
+	DiscoveryClientRouteDefinitionLocator dynamicRoutes(ReactiveDiscoveryClient reactiveDiscoveryClient , DiscoveryLocatorProperties discoveryLocatorProperties){
+		return new DiscoveryClientRouteDefinitionLocator(reactiveDiscoveryClient , discoveryLocatorProperties) ;}
+
+###Application.yml
+
+spring:
+  cloud:
+    discovery:
+      enabled: true
+  application:
+    name: gateway-service
+server:
+  port: 8088

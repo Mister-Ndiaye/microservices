@@ -1,0 +1,22 @@
+#ServerEureka
+
+###Dependence Spring
+    1- eureka server
+		2- config client
+
+###Application
+@EnableEurekaServer
+
+###Application.yml
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+spring:
+  cloud:
+    config:
+      import-check.enabled: false
