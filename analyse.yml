@@ -10,7 +10,7 @@
 		7-Spring Heteoas
 		8-Rest 
 		9-Devtools
-
+    10- actuator
 ###Application.yml
 management:
   endpoints:
