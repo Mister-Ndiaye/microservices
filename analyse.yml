@@ -11,8 +11,10 @@
 		8-Rest 
 		9-Devtools
     10- actuator
-    11 - Mapper 
+    11 - Mapper (chech mapstruct version)
+    12 -Swagger (check the version (swagger and swagger-ui))
 
+    
       ###### Mappper  """"""""
 
     propretie : 
@@ -49,7 +51,25 @@
                       </annotationProcessorPaths>
                     </configuration>
               </plugin>
-              
+
+
+      ############# Swagger  ################""
+
+      
+                <!--  Swagger  dependency  -->
+      	<dependency>
+                  <groupId>io.springfox</groupId>
+                  <artifactId>springfox-swagger2</artifactId>
+                  <version>3.0.0</version>
+                  <scope>compile</scope>
+                </dependency>
+                  <!--  Swagger ui dependency  -->
+                <dependency>
+                  <groupId>io.springfox</groupId>
+                  <artifactId>springfox-swagger-ui</artifactId>
+                  <version>3.0.0</version>
+                  <scope>compile</scope>
+		</dependency>
 ###Application.yml
 management:
   endpoints:
